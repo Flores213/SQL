@@ -1,0 +1,50 @@
+-- Create the 'customers' table
+CREATE TABLE customers (
+    customer_id INTEGER,
+    customer_name TEXT,
+    contact_email TEXT,
+    contact_phone TEXT,
+    billing_address TEXT,
+    shipping_address TEXT
+);
+    
+-- Create the 'shipments' table     
+CREATE TABLE shipments (
+    sender_id INTEGER,
+    shipment_id INTEGER,
+    package_description TEXT,
+    weight_kg REAL,
+    shipping_method TEXT,
+    shipping_date DATE,
+    delivery_date DATE,
+    status TEXT
+);
+
+-- Insert data into the 'customers' table
+INSERT INTO customers (customer_id, customer_name, contact_email, contact_phone, billing_address, shipping_address)
+VALUES
+    (1, 'John Smith', 'john.smith@example.com', '555-123-4567', '123 Main St, Suite 101, Cityville, CA 12345', '123 Main St, Suite 101, Cityville, CA 12345'),
+    (2, 'Alice Johnson', 'alice.johnson@example.com', '555-987-6543', '456 Elm St, Apt 202, Townsville, NY 54321', '456 Elm St, Apt 202, Townsville, NY 54321'),
+    (3, 'David Davis', 'david.davis@example.com', '555-456-7890', '789 Oak Rd, Unit 5, Villagetown, TX 67890', '789 Oak Rd, Unit 5, Villagetown, TX 67890'),
+    (4, 'Emily Wilson', 'emily.wilson@example.com', '555-789-0123', '567 Pine Ave, Apt 303, Hamletown, FL 34567', '567 Pine Ave, Apt 303, Hamletown, FL 34567'),
+    (5, 'Sarah Martinez', 'sarah.martinez@example.com', '555-234-5678', '890 Cedar St, Suite 7, Parksville, AZ 45678', '890 Cedar St, Suite 7, Parksville, AZ 45678'),
+    (6, 'Michael Lee', 'michael.lee@example.com', '555-345-6789', '234 Birch Rd, Unit 12, Meadowville, WA 23456', '234 Birch Rd, Unit 12, Meadowville, WA 23456'),
+    (7,'Jennifer Adams', 'jennifer.adams@example.com', '555-876-5432', '456 Maple Ave, Apt 404, Beachside, NC 65432', '456 Maple Ave, Apt 404, Beachside, NC 65432'),
+    (8,'Robert Brown', 'robert.brown@example.com', '555-654-3210', '789 Redwood St, Suite 2B, Forestville, OR 78901', '789 Redwood St, Suite 2B, Forestville, OR 78901'),
+    (9,'Laura White', 'laura.white@example.com', '555-234-5678', '123 Elm St, Apt 505, Meadowville, CA 12345', '123 Elm St, Apt 505, Meadowville, CA 12345'),
+    (10,'William Johnson', 'william.johnson@example.com', '555-876-5432', '789 Oak Rd, Unit 15, Townsville, NY 54321', '789 Oak Rd, Unit 15, Townsville, NY 54321'),
+	(11, 'Maria Rodriguez', 'maria.rodriguez@example.com', '555-345-6789', '890 Cedar St, Apt 7, Beachside, CA 98765', '890 Cedar St, Apt 7, Beachside, CA 98765'),
+    (12, 'Mohammed Ali', 'mohammed.ali@example.com', '555-567-8901', '456 Oak Ave, Suite 301, Parksville, TX 12345', '456 Oak Ave, Suite 301, Parksville, TX 12345'),
+    (13, 'Linda Kim', 'linda.kim@example.com', '555-678-9012', '789 Maple Rd, Unit 9, Meadowville, NY 67890', '789 Maple Rd, Unit 9, Meadowville, NY 67890');
+
+
+
+-- Insert data into the 'shipments' table
+INSERT INTO shipments (sender_id, shipment_id, package_description, weight_kg, shipping_method, shipping_date, delivery_date, status)
+VALUES
+    (1, 2, 'Electronics', 5.2, 'Express', '2023-01-10', '2023-01-15', 'Delivered'),
+    (2, 4, 'Clothing & Accessories', 3.0, 'Standard', '2023-02-05', '2023-02-10', 'In Transit'),
+    (3, 5, 'Furniture', 18.5, 'Express', '2023-03-12', '2023-03-15', 'Delivered'),
+    (4, 1, 'Books', 2.0, 'Standard', '2023-04-20', '2023-04-25', 'Delivered'),
+    (5, 6, 'Automotive Parts', 12.7, 'Express', '2023-05-15', '2023-05-20', 'In Transit'),
+    (10, 3, 'Food & Beverages', 7.2, 'Standard', '2023-10-03', '2023-10-08', 'Delivered');
