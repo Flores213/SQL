@@ -1,0 +1,24 @@
+SELECT Product, SUM(quantity)
+FROM BIT_DB.FebSales
+WHERE location like '%Los Angeles%'
+GROUP BY Product
+
+20in Monitor	44
+27in 4K Gaming Monitor	70
+27in FHD Monitor	81
+34in Ultrawide Monitor	63
+AA Batteries (4-pack)	293
+AAA Batteries (4-pack)	351
+Apple Airpods Headphones	140
+Bose SoundSport Headphones	131
+Flatscreen TV	36
+Google Phone	52
+LG Dryer	5
+LG Washing Machine	6
+Lightning Charging Cable	243
+Macbook Pro Laptop	46
+ThinkPad Laptop	42
+USB-C Charging Cable	271
+Vareebadd Phone	25
+Wired Headphones	191
+iPhone	71
