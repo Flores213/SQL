@@ -1,0 +1,12 @@
+SELECT distinct location, count(orderID)
+FROM BIT_DB.JanSales
+WHERE location LIKE '%NY%'
+AND length(orderid) = 6 
+AND orderid <> 'Order ID'
+GROUP BY location
+HAVING count(orderID)>2  
+
+148 Elm St, New York City, NY 10001	3
+515 Lincoln St, New York City, NY 10001	3
+916 Pine St, New York City, NY 10001	3
+961 Jefferson St, New York City, NY 10001	4
