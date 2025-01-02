@@ -1,0 +1,13 @@
+SELECT yr, subject, winner
+  FROM nobel
+ WHERE yr = 1950
+
+yr	subject	winner
+1950	chemistry	Kurt Alder
+1950	chemistry	Otto Diels
+1950	literature	Bertrand Russell
+1950	medicine	Edward Kendall
+1950	medicine	Philip Hench
+1950	medicine	Tadeus Reichstein
+1950	peace	Ralph Bunche
+1950	physics	Cecil Powell
